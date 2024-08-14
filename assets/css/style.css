@@ -206,9 +206,12 @@ h1,h2,h3,h4,h5,h6{
   border: 1px solid #04285B20;
   border-radius: 5px;
   height: 100%;
+  outline: none;
 }
 .main-banner .banner-form-section input::placeholder, .main-banner .banner-form-section textarea::placeholder{
-  color: #04285B95;
+  color: var(--primary-color);
+  font-weight: 500;
+  font-size: 14px;
 }
 .main-banner .banner-form-section .main-btn{
   border: none;
@@ -503,4 +506,71 @@ h1,h2,h3,h4,h5,h6{
 }
 #footer-section .bottom-section .social-icons a{
   text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1600px){
+
+
+  .main-padding{
+    padding:0 5%;
+  }
+
+  .main-head{
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .main-banner{
+    gap: 30px;
+  }
+  .main-banner.main-padding{
+    padding:0 14% !important;
+  }
+  .main-banner .banner-content h1{
+    width: 70%;
+    font-size: 32px;
+  }
+  .main-banner .main-para{
+    width: 50%;
+    font-size: 18px;
+  }
+  .main-banner .banner-content{
+    margin-top: 15px;
+  }
+  .main-banner .banner-form-section{
+    padding-left: 30px;
+  }
+  .main-banner .banner-form-section form{
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .main-banner .banner-form-section input, .main-banner .banner-form-section textarea{
+    padding: 10px 14px;
+  }
+
+
+
+
+  #provide-section .provide-items-main{
+    padding:  0 2%;
+  }
+
+
+
+  #cta-section h4{
+    font-size: 32px;
+  }
+
 }
