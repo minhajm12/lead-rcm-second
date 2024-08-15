@@ -391,6 +391,7 @@ h1,h2,h3,h4,h5,h6{
   background: url('../img/footer-bg.png');
   background-size: cover;
   padding-bottom: 20px;
+  overflow-x: hidden;
 
 }
 #footer-section .footer-logo-sec{
