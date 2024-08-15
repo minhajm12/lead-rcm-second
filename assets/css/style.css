@@ -60,6 +60,7 @@ body{
     scroll-behavior: smooth;
     font-family: 'degular';
     color: var(--primary-color);
+    overflow-x: hidden;
 }
 
 
@@ -436,8 +437,12 @@ h1,h2,h3,h4,h5,h6{
   text-decoration: none;
   color: var(--primary-color);
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 14px;
+}
+#footer-section .our-service{
+  display: flex;
+  gap: 30px;
 }
 #footer-section .contact-details{
   display: flex;
@@ -573,4 +578,368 @@ h1,h2,h3,h4,h5,h6{
     font-size: 32px;
   }
 
+}
+
+
+
+
+
+@media only screen and (max-width: 992px)
+{
+  .main-head{
+    font-size: 28px; 
+  }
+
+  .nav-open{
+    background: transparent;
+  }
+  .nav-open img{
+    width: 30px;
+  }
+
+
+
+
+  .header .navbar-nav .nav-item .nav-link{
+    font-size: 22px;
+  }
+  .main-banner.main-padding{
+    padding: 5% 8% !important;
+  }
+  .main-banner .banner-content h1{
+    width: 100%;
+  }
+  .main-banner .main-para{
+    width: 75%;
+  }
+  .main-banner .banner-form-section{
+    padding: 30px 10px;
+  }
+  .main-banner .banner-bottom .banner-image-section img{
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+
+
+  #provide-section .provide-items-main{
+    padding: 0 5%;
+    overflow-x: scroll;
+  }
+  #provide-section .provide-items-main .provide-items{
+    width: 300px;
+  }
+
+
+
+
+  #cta-section{
+    padding: 8% 0;
+  }
+  #cta-section h4{
+    width: 90%;
+    font-size: 28px;
+  }
+
+
+
+
+  #transform-section .bottom-content{
+    padding: 40px 0;
+  }
+  #transform-section .content-side{
+    padding: 0 40px;
+  }
+  #transform-section .content-item h4{
+    text-align: center;
+    font-size: 22px;
+  }
+  #transform-section .content-item p{
+    text-align: center;
+  }
+  #transform-section h6{
+  width: 100%;
+  padding: 20px;
+  background: #EFFFFE;
+  border-radius: 10px;
+  border:1px solid var(--grade1);
+  font-size: 20px;
+  }
+
+
+
+
+
+  #whychooseus .whychoose-card-section{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #whychooseus .whychoose-card .whychoose-content h5{
+    font-size: 22px;
+  }
+  #whychooseus .whychoose-card .whychoose-content{
+    padding: 15px 0;
+  }
+  
+
+
+  #footer-section .our-service{
+    gap: 40px;
+  }
+  #footer-section .footer-title{
+    margin-bottom: 10px !important;
+  }
+  #footer-section .newsletter-section{
+    margin: 0;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px){
+
+
+  .navbar-brand .logo img{
+    width: 150px;
+  }
+
+  .main-btn{
+    padding: 3px 20px;
+  }
+  .main-head{
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .main-padding{
+    padding:0 3%;
+  }
+
+
+
+  .header .main-btn{
+    padding: 6px 20px;
+    font-size: 18px;
+  }
+  #bannersection{
+    background: url('../img/banner-bg-mobile.jpg');
+    background-position: center center;
+  }
+
+  .main-banner .banner-content{
+    margin: 0;
+  }
+  .main-banner .banner-content h1{
+    font-size: 26px;
+    line-height: 26px;
+  }
+  .main-banner.main-padding{
+    padding: 8% 3% !important;
+  }
+  .main-banner .main-para{
+    width:100%;
+    font-size: 18px;
+  }
+  .main-banner .banner-bottom .banner-image-section img{
+    height: 200px;
+    border-radius: 10px;
+  }
+  .main-banner .banner-form-section h4{
+    font-size: 18px;
+  }
+
+
+
+  #provide-section{
+    padding: 10% 0;
+  }
+  #provide-section .provide-items-main .provide-items{
+    width: 250px;
+    padding: 15px;
+  }
+  #provide-section .provide-items .img-div{
+    padding: 15px;
+    width: 60px;
+    height: 60px;
+  }
+  #provide-section .provide-items-main .provide-items img{
+    width: 30px;
+  }
+  #provide-section .provide-items-main{
+    padding-top: 20px !important;
+    padding: 0 5%;
+  }
+  #provide-section .provide-items .provide-content h6{
+    font-size: 18px;
+  }
+
+
+
+
+  #cta-section{
+    background:var(--primary-color) ;
+    padding: 10% 0;
+  }
+  #cta-section h4{
+    font-size: 22px;
+    line-height: 22px;
+    color: #fff;
+  }
+
+
+
+  #transform-section{
+    padding: 10% 0;
+  }
+  #transform-section .content-side{
+    padding: 0;
+  }
+  #transform-section .content-item p{
+    font-size: 18px;
+    line-height: 20px;
+  }
+  #transform-section .content-item h4{
+    font-size: 20px;
+  }
+  #transform-section .content-side{
+    gap:20px
+  }
+  #transform-section .bottom-content{
+    padding: 20px 0;
+  }
+  #transform-section h6{
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+
+  #whychooseus{
+    padding: 0 0 10% 0;
+  }
+  #whychooseus .whychoose-card-section{
+    grid-template-columns: 1fr;
+    padding-top: 20px;
+  }
+  #whychooseus .whychoose-card .img-div{
+    border-radius: 10px;
+  }
+  #whychooseus .whychoose-card .whychoose-content h5{
+    font-size: 18px;
+  }
+  #whychooseus .whychoose-card .whychoose-content p{
+    font-weight: 500;
+  }
+
+
+  #footer-section ul li{
+    padding-left: 12px;
+    line-height: 18px;
+  }
+  #footer-section ul li a{
+    font-size: 16px;
+  }
+  #footer-section .our-service{
+    gap: 10px;
+  }
+  #footer-section ul li::before{
+    width: 10px;
+    height: 10px;
+    top: 3px;
+  }
+  #footer-section .contact-details{
+    gap: 5px;
+  }
+  #footer-section .newsletter-section{
+    margin-top: 20px;
+  }
+  #footer-section .address{
+    font-weight: 500;
+  }
+  #footer-section .footer-logo img{
+    width: 180px;
+  }
+  .footer-padding{
+    padding: 10% 0;
+  }
+}
+
+
+
+@media only screen and (max-width: 380px){
+
+
+  .main-head{
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+
+
+  #bannersection{
+    height: 90vh;
+  }
+  .main-banner .banner-content h1{
+    font-size: 22px;
+    line-height: 22px;
+  }
+  .main-banner .main-para{
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .main-banner .banner-bottom .banner-image-section img{
+    display: none;
+  }
+  .main-banner
+  {
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-banner .banner-form-section{
+    padding: 0 10px;
+  }
+
+
+
+
+  #provide-section .provide-items .img-div{
+    width: 50px;
+    height: 50px;
+  }
+  #provide-section .provide-items-main .provide-items img{
+    width: 25px;
+  }
+
+
+  #cta-section h4{
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+
+
+  #transform-section .content-side .content-item{
+    gap: 5px;
+  }
+  #transform-section .content-item p{
+    font-size: 16px;
+    line-height: 18px;
+  }
+  #transform-section .content-item h4{
+    font-size: 19px;
+  }
+  #transform-section .content-side{
+    padding: 0 5px;
+  }
+  #transform-section h6{
+    font-size: 16px;
+  }
+ 
 }
