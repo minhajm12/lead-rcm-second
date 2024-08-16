@@ -4,3 +4,10 @@ document.querySelectorAll(".content-item").forEach(item => item.addEventListener
     document.getElementById("main_img").src =img
   }))
   
+
+
+
+
+  const TopHeaderHeight = document.querySelector('.header').offsetHeight;
+
+document.documentElement.style.setProperty('--top-header-height',`${TopHeaderHeight}px`)

@@ -160,37 +160,49 @@ h1,h2,h3,h4,h5,h6{
 /* BANNER SECTION */
 .main-banner{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
-  gap: 60px;
+  height: calc(100vh - var(--top-header-height, 20px));
+}
+.main-banner .banner-image{
+  display: flex;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.main-banner .banner-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .main-banner .banner-content{
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 10px;
-  margin-top: 60px;
+  height: 100%;
+  justify-content: center;
 }
 .main-banner .banner-content h1{
-  width: 70%;
-  text-align: center;
   text-transform: capitalize;
   font-weight: 700;
-  font-size: 45px;
+  font-size: 36px;
 }
 .main-banner .main-para{
-  width: 40%;
-  text-align: center;
+  width: 80%;
   line-height: 20px;
-}
-.main-banner .banner-bottom .banner-image-section img{
-  border-radius: 20px;
 }
 
 
 /* Banner Form Section */
 .main-banner .banner-form-section{
-  padding-left: 50px;
+  padding: 0 40px;
+  height: 40vh;
+}
+.main-banner .banner-form-section .form-main{
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  transform: translateY(-140px);
+  box-shadow: 0 0 20px #00000010;
 }
 .main-banner .banner-form-section h4{
   font-weight: 700;
@@ -273,17 +285,20 @@ h1,h2,h3,h4,h5,h6{
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 120px 0;
+  padding: 80px 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 20px;
+  overflow: hidden;
 }
 #cta-section h4{
-  width: 60%;
+  width: 80%;
   text-align: center;
   font-weight: 700;
   font-size: 38px;
   text-transform: capitalize;
+  color: #fff;
 }
 
 
@@ -293,6 +308,9 @@ h1,h2,h3,h4,h5,h6{
 /* TRANSFORM SECTION  */
 #transform-section{
   padding: 5% 0;
+}
+#transform-section .content.main-padding{
+  padding-right: 0;
 }
 #transform-section .bottom-content{
   padding: 60px 0;
@@ -318,8 +336,13 @@ h1,h2,h3,h4,h5,h6{
   font-weight: 500;
   line-height: 24px;
 }
+#transform-section .bottom-content .transform-img-div{
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
 #transform-section .bottom-content .transform-img-div .img-div{
-  border-radius:20px ;
+  border-radius:20px 0 0 20px ;
   overflow: hidden;
 }
 #transform-section .bottom-content .transform-img-div img{
@@ -545,16 +568,14 @@ h1,h2,h3,h4,h5,h6{
     padding:0 14% !important;
   }
   .main-banner .banner-content h1{
-    width: 70%;
-    font-size: 32px;
+    width: 100%;
+    font-size: 28px;
   }
   .main-banner .main-para{
-    width: 50%;
+    width: 100%;
     font-size: 18px;
   }
-  .main-banner .banner-content{
-    margin-top: 15px;
-  }
+
   .main-banner .banner-form-section{
     padding-left: 30px;
   }
@@ -564,6 +585,12 @@ h1,h2,h3,h4,h5,h6{
   }
   .main-banner .banner-form-section input, .main-banner .banner-form-section textarea{
     padding: 10px 14px;
+  }
+  .main-banner .banner-form-section h4{
+    font-size: 22px;
+  }
+  .main-banner .banner-content{
+  padding-bottom: 100px;
   }
 
 
@@ -582,6 +609,18 @@ h1,h2,h3,h4,h5,h6{
 }
 
 
+
+@media only screen and (max-width: 1400px){
+  .main-banner .banner-form-section h4{
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 1200px){
+  .main-banner .banner-form-section h4{
+    font-size: 18px;
+  }
+}
 
 
 
@@ -606,12 +645,16 @@ h1,h2,h3,h4,h5,h6{
   }
   .main-banner.main-padding{
     padding: 5% 8% !important;
+    justify-content: center;
+    gap:30px;
   }
   .main-banner .banner-content h1{
-    width: 100%;
+    width: 90%;
+    text-align: center;
   }
   .main-banner .main-para{
     width: 75%;
+    text-align: center;
   }
   .main-banner .banner-form-section{
     padding: 30px 10px;
@@ -622,6 +665,14 @@ h1,h2,h3,h4,h5,h6{
     object-fit: cover;
   }
 
+  .main-banner .banner-content{
+    padding: 0;
+    align-items: center;
+  }
+  .main-banner .banner-form-section .form-main{
+    transform: translateY(0);
+  }
+
 
 
   #provide-section .provide-items-main{
@@ -630,6 +681,9 @@ h1,h2,h3,h4,h5,h6{
   }
   #provide-section .provide-items-main .provide-items{
     width: 300px;
+  }
+  .main-banner .banner-image{
+    height: 30vh;
   }
 
 
@@ -666,6 +720,9 @@ h1,h2,h3,h4,h5,h6{
   border-radius: 10px;
   border:1px solid var(--grade1);
   font-size: 20px;
+  }
+  #transform-section .content.main-padding{
+    padding: 0 5%;
   }
 
 
@@ -736,12 +793,17 @@ h1,h2,h3,h4,h5,h6{
   .main-banner .banner-content{
     margin: 0;
   }
+  .main-banner .banner-form-section .form-main{
+    padding: 20px;
+    border-radius: 10px;
+  }
   .main-banner .banner-content h1{
-    font-size: 26px;
-    line-height: 26px;
+    font-size: 24px;
+    line-height: 24px;
   }
   .main-banner.main-padding{
-    padding: 8% 3% !important;
+    padding: 2% 3% 8% 3% !important;
+    justify-content: start;
   }
   .main-banner .main-para{
     width:100%;
@@ -753,6 +815,9 @@ h1,h2,h3,h4,h5,h6{
   }
   .main-banner .banner-form-section h4{
     font-size: 18px;
+  }
+  .main-banner .banner-bottom .banner-image-section{
+    padding: 0 10px;
   }
 
 
@@ -788,9 +853,10 @@ h1,h2,h3,h4,h5,h6{
     padding: 10% 0;
   }
   #cta-section h4{
-    font-size: 22px;
+    font-size: 20px;
     line-height: 22px;
     color: #fff;
+    font-weight: 600;
   }
 
 
@@ -883,17 +949,17 @@ h1,h2,h3,h4,h5,h6{
 
 
   #bannersection{
-    height: 90vh;
+    height: 100vh;
   }
   .main-banner .banner-content h1{
-    font-size: 22px;
-    line-height: 22px;
+    font-size: 18px;
+    line-height: 20px;
   }
   .main-banner .main-para{
     font-size: 16px;
     line-height: 18px;
   }
-  .main-banner .banner-bottom .banner-image-section img{
+  .main-banner .banner-image{
     display: none;
   }
   .main-banner
@@ -920,8 +986,8 @@ h1,h2,h3,h4,h5,h6{
 
 
   #cta-section h4{
-    font-size: 20px;
-    line-height: 20px;
+    font-size: 18px;
+    line-height: 18px;
   }
 
 
